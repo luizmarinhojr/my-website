@@ -13,7 +13,12 @@ function HomePage() {
                     <div className="container text-center hg">
                         <h1 className="white">Luiz Marinho. Codificando o futuro, do design à funcionalidade</h1>
                         <p className="white">Desenvolvendo softwares que unem o que há de mais moderno em tecnologia</p>
-                        <NavLink to="/projetos" className="button-call" end>Conhecer Projetos</NavLink>
+                        <NavLink to="/projetos" className="button-call-home" end>
+                            Acessar Projetos
+                            <div className="rect">
+                                <span className="">{'⇾'}</span>
+                            </div>
+                        </NavLink>
                     </div>
                 </div>
 

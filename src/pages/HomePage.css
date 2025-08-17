@@ -10,8 +10,29 @@
 }
 
 .button-call:hover {
-    transform: scale(1.05);
-    transition: 0.4s;
+    transform: scale(1.02);
+    transition: 0.3s;
+}
+
+.button-call-home {
+    background-color: var(--main-color);
+    color: white;
+    width: 250px;
+    height: 40px;
+    border-radius: 20px;
+    font-size: 1.3rem;
+    padding: 5px 5px 5px 25px;
+    cursor: pointer;    
+    text-decoration: none;
+    box-shadow: 0px 0px 5px rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.button-call-home:hover {
+    transform: scale(1.02);
+    transition: 0.3s;
 }
 
 h1 {
@@ -65,6 +86,20 @@ h1 {
     gap: 20px;
     flex-wrap: wrap;
     justify-content: center;
+}
+
+.rect {
+    width: 50px;
+    background-color: #003123;
+    border-radius: 20px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rect:hover {
+    background-color: #00251b;
 }
 
 @media (max-width: 1125px) {
