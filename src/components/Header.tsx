@@ -11,6 +11,10 @@ function Header() {
         setIsMenuVisible(!isMenuVisible);
     }
 
+    const closeMenu = () => {
+        setIsMenuVisible(false);
+    }
+
     return (
         <>
             <header>
@@ -20,7 +24,7 @@ function Header() {
                         <a className="not-btn" href="/"><img src={logo} width="202px" height="43px" /></a>
                     </div>
                     <div className="menu">
-                        <Nav />
+                        <Nav onCloseMenu={closeMenu} />
                     </div>
                 </div>
 
@@ -32,7 +36,7 @@ function Header() {
                         </div>
 
                         <div className="modal-menu">
-                            <Nav />
+                            <Nav onCloseMenu={closeMenu} />
                         </div>
                     </div>
 

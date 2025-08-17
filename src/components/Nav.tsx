@@ -7,7 +7,11 @@ interface menuItems {
     name: string;
 }
 
-export default function Nav() {
+interface NavProps {
+    onCloseMenu: () => void;
+}
+
+export default function Nav({ onCloseMenu }: NavProps) {
     const items: menuItems[] = [
         { id: 1, link: "/", name: "Início" },
         { id: 2, link: "/projetos", name: "Projetos" },
@@ -18,7 +22,7 @@ export default function Nav() {
         <>
             <nav className="menu-items">
                 {items.map((value) => (
-                    <NavLink key={value.id} to={value.link} className="menu-item not-btn" end>{value.name}</NavLink>
+                    <NavLink key={value.id} to={value.link} className="menu-item not-btn" onClick={onCloseMenu} end>{value.name}</NavLink>
                 ))}
             </nav>
         </>
