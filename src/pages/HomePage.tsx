@@ -1,6 +1,7 @@
 import './HomePage.css';
 import boyProgrammer from '../assets/boy-programming-no-bg.png';
 import computerSystem from '../assets/computer-system-no-bg.png';
+import { NavLink } from 'react-router';
 
 function HomePage() {
 
@@ -12,7 +13,7 @@ function HomePage() {
                     <div className="container text-center hg">
                         <h1 className="white">Luiz Marinho. Codificando o futuro, do design à funcionalidade</h1>
                         <p className="white">Desenvolvendo softwares que unem o que há de mais moderno em tecnologia</p>
-                        <a className="button-call" href="/exercicios">Conhecer Projetos</a>
+                        <NavLink to="/projetos" className="button-call" end>Conhecer Projetos</NavLink>
                     </div>
                 </div>
 
