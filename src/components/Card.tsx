@@ -14,7 +14,7 @@ export function Card({ repo }: CardProps) {
                 <section className="owner">
                     <a className="link" href={repo.owner.html_url}>
                         <img className="owner-pic" src={repo.owner.avatar_url} width="30px" height="30px" />
-                        <p>{repo.owner.login}</p>
+                        <p className="white">{repo.owner.login}</p>
                     </a>
                     <span>{repo.language}</span>
                 </section>

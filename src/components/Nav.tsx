@@ -11,7 +11,7 @@ export default function Nav() {
     const items: menuItems[] = [
         { id: 1, link: "/", name: "Início" },
         { id: 2, link: "/projetos", name: "Projetos" },
-        { id: 3, link: "/teste", name: "Teste" }
+        { id: 3, link: "/contato", name: "Contato" }
     ]
 
     return (
