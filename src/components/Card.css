@@ -1,0 +1,65 @@
+.card-h {
+    padding: 20px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px rgb(202, 202, 202);
+    display: flex;
+    flex-basis: 40%;
+    flex-grow: 1;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+    overflow: hidden; 
+    transition: 0.2s;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.buttons {
+    display: flex;
+    width: 100%;
+    justify-content:space-evenly;
+    gap: 10px;
+}
+
+.owner {
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    gap: 20px;
+}
+
+.owner-info {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.owner-pic {
+    border-radius: 20px;
+}
+
+.button-call.dark {
+    background-color: var(--dark);
+    color: white;
+}
+
+.wd-50 {
+    width: 50%;
+}
+
+.wd-100 {
+    width: 100%;
+}
+
+.link {
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+    text-decoration: none;
+    cursor: pointer;
+}

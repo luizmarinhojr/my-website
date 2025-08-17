@@ -1,0 +1,24 @@
+.menu-items {
+    display: flex;
+}
+
+.menu-item {
+    background-color: #005b41;
+    color: white;
+    text-decoration: none;
+    padding: 10px 10px 10px 10px;
+    border-radius: 15px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.menu > ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+a.active {
+  color: #005b41;
+  font-size: 1.3rem;
+}
