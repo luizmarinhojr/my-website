@@ -55,7 +55,7 @@ textarea:focus {
 }
 
 input[type="submit"]:hover {
-    transform: scale(1.1);
+    transform: scale(1.02);
     transition: 0.3s;
     outline: 2px solid var(--dark);
 }
