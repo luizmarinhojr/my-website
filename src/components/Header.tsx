@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import './Header.css';
 import Nav from './Nav';
+import hamburguer from '../assets/menu-svgrepo-com.svg';
+import logo from '../assets/logo-luiz-dev.png';
 
 function Header() {
     const [isMenuVisible, setIsMenuVisible] = useState(false);
@@ -14,8 +16,8 @@ function Header() {
             <header>
                 <div className="container-header">
                     <div className="logo">
-                        <img src="/src/assets/menu-svgrepo-com.svg" id="hamburguer-menu" onClick={toogleMenu} width="30px" height="30px" />
-                        <a className="not-btn" href="/"><img src="/src/assets/logo-luiz-dev.png" width="202px" height="43px" /></a>
+                        <img src={hamburguer} id="hamburguer-menu" onClick={toogleMenu} width="30px" height="30px" />
+                        <a className="not-btn" href="/"><img src={logo} width="202px" height="43px" /></a>
                     </div>
                     <div className="menu">
                         <Nav />
@@ -25,8 +27,8 @@ function Header() {
                 <div id="modal" className={`${isMenuVisible ? 'visible' : ''}`}>
                     <div className="modal-header">
                         <div className="logo">
-                            <img src="/src/assets/menu-svgrepo-com.svg" id="hamburguer-menu" onClick={toogleMenu} width="30px" height="30px" />
-                            <img src="/src/assets/logo-luiz-dev.png" width="202px" height="43px" />
+                            <img src={hamburguer} id="hamburguer-menu" onClick={toogleMenu} width="30px" height="30px" />
+                            <img src={logo} width="202px" height="43px" />
                         </div>
 
                         <div className="modal-menu">

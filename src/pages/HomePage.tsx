@@ -1,4 +1,6 @@
 import './HomePage.css';
+import boyProgrammer from '../assets/boy-programming-no-bg.png';
+import computerSystem from '../assets/computer-system-no-bg.png';
 
 function HomePage() {
 
@@ -21,7 +23,7 @@ function HomePage() {
                             <p className="white">Criando aplicações web intuitivas e robustas, do conceito inicial ao produto final. Onde a inovação se encontra com a usabilidade.</p>
                         </div>
                         <div className="b-side">
-                            <img className="photo" src="/src/assets/boy-programming-no-bg.png" />
+                            <img className="photo" src={boyProgrammer} />
                         </div>
                     </div>
                 </div>
@@ -29,7 +31,7 @@ function HomePage() {
                 <div className="container-fluid bg-dark">
                     <div className="container-bt hg">
                         <div className="c-side">
-                            <img className="photo" src="/src/assets/computer-system-no-bg.png" />
+                            <img className="photo" src={computerSystem} />
                         </div>
                         <div className="d-side">
                             <h1 className="white">Soluções Full Stack Completas para o Seu Negócio</h1>

@@ -1,4 +1,5 @@
 import './Footer.css';
+import logo from '../assets/logo-luiz-dev.png';
 
 function Footer() {
     return (
@@ -6,7 +7,7 @@ function Footer() {
             <footer>
                 <div className="container-bt align-start">
                     <div className="column">
-                        <a className="not-btn" href="/"><img src="/src/assets/logo-luiz-dev.png" width="202px" height="43px" style={{ marginTop: "15px" }} /></a>
+                        <a className="not-btn" href="/"><img src={logo} width="202px" height="43px" style={{ marginTop: "15px" }} /></a>
                     </div>
                     <div className="column">
                         <p><b>Redes Sociais</b></p>
