@@ -12,13 +12,14 @@
     cursor: pointer;
 }
 
-.menu > ul {
-    display: flex;
-    gap: 20px;
-    list-style: none;
-}
-
 a.active {
   color: #005b41;
   font-size: 1.3rem;
+}
+
+@media (max-width: 800px) {
+    .menu-items {
+        display: flex;
+        flex-direction: column;
+    }
 }

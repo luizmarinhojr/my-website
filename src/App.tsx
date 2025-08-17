@@ -11,9 +11,9 @@ export default function App() {
         <>
             <Header />
             <Routes>
-                <Route errorElement={<Error404 />} />
                 <Route index element={<HomePage />} />
                 <Route path="/projetos" element={<ProjectsPage />} />
+                <Route path="*" element={<Error404 />} />
             </Routes>
             <Footer />
         </>

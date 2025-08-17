@@ -1,8 +1,9 @@
 .card-h {
     padding: 20px;
-    background-color: white;
+    background-color: var(--dark);
+    color: var(--light);
     border-radius: 15px;
-    box-shadow: 5px 5px 15px rgb(202, 202, 202);
+    box-shadow: 5px 5px 15px rgb(27, 27, 27);
     display: flex;
     flex-basis: 40%;
     flex-grow: 1;
@@ -41,9 +42,9 @@
     border-radius: 20px;
 }
 
-.button-call.dark {
-    background-color: var(--dark);
-    color: white;
+.button-call.white {
+    background-color: var(--dark-grey);
+    color: var(--dark);
 }
 
 .wd-50 {
@@ -62,4 +63,11 @@
     gap: 10px;
     text-decoration: none;
     cursor: pointer;
+}
+
+@media (max-width: 400px) {
+    .button-call {
+        font-size: 1rem;
+        font-weight: 600;
+    }
 }

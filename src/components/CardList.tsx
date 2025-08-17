@@ -25,7 +25,7 @@ export function CardList() {
 
 
     if (loading) {
-        return <div>Carregando repositórios...</div>;
+        return <div className="white">Carregando repositórios...</div>;
     }
 
     return (

@@ -21,7 +21,7 @@ export function Card({ repo }: CardProps) {
                 <div className="buttons">
                     <a className={repo.homepage ? "button-call wd-50 text-center" : "button-call wd-100 text-center"} href={repo.html_url} target="_blank">Acessar código</a>
                     {repo.homepage &&
-                        <a className="button-call wd-50 text-center dark" href={repo.homepage} target="_blank">Acessar pronto</a>
+                        <a className="button-call wd-50 text-center white" href={repo.homepage} target="_blank">Acessar pronto</a>
                     }
                 </div>
             </div>
