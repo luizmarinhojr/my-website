@@ -1,3 +1,4 @@
+import { format } from "date-fns";
 import type { Repo } from "../models/repositories";
 import './Card.css';
 
@@ -16,12 +17,12 @@ export function Card({ repo }: CardProps) {
                         <img className="owner-pic" src={repo.owner.avatar_url} width="30px" height="30px" />
                         <p className="white">{repo.owner.login}</p>
                     </a>
-                    <span>{repo.language}</span>
+                    <span>{format(new Date(repo.updated_at), 'dd/MM/yyyy')} - {repo.language}</span>
                 </section>
                 <div className="buttons">
-                    <a className={repo.homepage ? "button-call wd-50 text-center" : "button-call wd-100 text-center"} href={repo.html_url} target="_blank">Acessar código</a>
+                    <a className="button-call grow text-center" href={repo.html_url} target="_blank">Acessar código</a>
                     {repo.homepage &&
-                        <a className="button-call wd-50 text-center white" href={repo.homepage} target="_blank">Acessar pronto</a>
+                        <a className="button-call grow text-center white" href={repo.homepage} target="_blank">Acessar pronto</a>
                     }
                 </div>
             </div>

@@ -1,3 +1,12 @@
+h3 {
+    margin-top: 0.2em;
+}
+
+span {
+    text-align: end;
+    font-size: 0.9rem;
+}
+
 .card-h {
     padding: 20px;
     background-color: var(--dark);
@@ -5,7 +14,7 @@
     border-radius: 15px;
     box-shadow: 5px 5px 15px rgb(27, 27, 27);
     display: flex;
-    flex-basis: 40%;
+    flex-basis: 44%;
     flex-grow: 1;
     flex-direction: column;
     align-items: stretch;
@@ -22,7 +31,12 @@
     display: flex;
     width: 100%;
     justify-content:space-evenly;
+    flex-wrap: wrap;
     gap: 10px;
+}
+
+.grow {
+    flex-grow: 1;
 }
 
 .owner {
