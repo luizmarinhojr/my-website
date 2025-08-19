@@ -66,3 +66,9 @@ a.not-btn {
         transform: translateX(0%);
     }
 }
+
+@media (max-width: 386px) {
+    #modal {
+        width: 100%;
+    }
+}

@@ -135,3 +135,9 @@ h1 {
         text-align: center;
     }
 }
+
+@media (max-width: 386px) {
+    .photo {
+        width: 300px;
+    }
+}
