@@ -61,14 +61,6 @@ span {
     color: var(--dark);
 }
 
-.wd-50 {
-    width: 50%;
-}
-
-.wd-100 {
-    width: 100%;
-}
-
 .link {
     color: black;
     display: flex;
